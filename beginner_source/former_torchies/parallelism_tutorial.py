@@ -68,8 +68,8 @@ class MyDataParallel(nn.DataParallel):
 # - parallel\_apply: apply a set of already-distributed inputs to a set of
 #   already-distributed models.
 #
-# To give a better clarity, here function ``data_parallel`` composed using
-# these collectives
+# To give better clarity, function ``data_parallel`` is composed using
+# these collectives:
 
 
 def data_parallel(module, input, device_ids, output_device=None):
